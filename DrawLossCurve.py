@@ -8,6 +8,17 @@ import pdb
 #Draw loss curves with many output in a file
 #This example has 3 loss curves
 
+#an example on log
+#I0728 11:05:30.162691  1057 solver.cpp:219] Iteration 20 (0.0501322 iter/s, 398.945s/20 iters), loss = 29.1468
+#I0728 11:05:30.162755  1057 solver.cpp:238]     Train net output #0: prob = 7.30188 (* 1 = 7.30188 loss)
+#I0728 11:05:30.162770  1057 solver.cpp:238]     Train net output #1: prob_2c_4f = 7.30041 (* 1 = 7.30041 loss)
+#I0728 11:05:30.162781  1057 solver.cpp:238]     Train net output #2: prob_2c_5c = 7.29855 (* 1 = 7.29855 loss)
+#I0728 11:05:30.162792  1057 solver.cpp:238]     Train net output #3: prob_3d_5c = 7.29898 (* 1 = 7.29898 loss)
+
+#explaining for pattern
+#([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?) is matching number with point or number with e
+#.*\n.* means no matter string after, new line, no matter string before
+
 def main(files):
     plt.style.use('ggplot')
     fig, ax1 = plt.subplots()
