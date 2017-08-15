@@ -5,3 +5,7 @@ This file is going to load parameters from one model to another, which this two 
 2. DrawLossCurve
 
 Draw many loss curves in a log file. 
+
+3. DrawAccuracyCurve
+
+Draw accuracy curves in a log file 
