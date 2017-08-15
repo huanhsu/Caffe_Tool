@@ -8,4 +8,4 @@ Draw many loss curves in a log file.
 
 3. DrawAccuracyCurve
 
-Draw accuracy curves in a log file 
+Draw accuracy curves in a log file.
